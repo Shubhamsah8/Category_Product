@@ -6,7 +6,7 @@ This project implements a RESTful API for managing categories and products. The 
 
 ## Backend Setup
 
-1. Install the required Python packages: `pip install -r requirements.txt`.
+1. Install the required Python packages: pip install flask flask-mysql
 
 2. Set up a MySQL database. Execute the database setup commands in the `app.py` file to create the necessary tables.
 
