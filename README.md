@@ -1,4 +1,4 @@
-# RESTful API and Frontend Assignment
+# Category and Product Assignment
 
 This project implements a RESTful API for managing categories and products. The backend is built using Python with Flask and MySQL as the database, and the frontend is a simple HTML/CSS interface with JavaScript for dynamic functionality.
 
