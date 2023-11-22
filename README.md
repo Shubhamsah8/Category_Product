@@ -40,9 +40,7 @@ This project implements a RESTful API for managing categories and products. The 
 
 1. Install the required Python packages: pip install flask flask-mysql
 
-2. Set up a MySQL database. Execute the SQL script in `database.sql` to create the necessary tables.
-
-3. Configure the MySQL connection details in `app.py`:
+2. Configure the MySQL connection details in `app.py`:
 
     ```python
     app.config['MYSQL_HOST'] = 'localhost'
@@ -51,7 +49,7 @@ This project implements a RESTful API for managing categories and products. The 
     app.config['MYSQL_DB'] = 'categoriesDB'
     ```
 
-4. Run the Flask application:
+3. Run the Flask application:
 
     ```bash
     python app.py
