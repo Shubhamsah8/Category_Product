@@ -4,13 +4,27 @@ This project implements a RESTful API for managing categories and products. The 
 
 ## Components
 
-### Backend (Flask and MySQL)
+## Backend Setup
 
-1. **app.py**: Contains the main Flask application. It defines RESTful endpoints for CRUD operations on categories and products. The application uses the Flask-MySQLdb extension for MySQL connectivity.
+1. Install the required Python packages: `pip install -r requirements.txt`.
 
-2. **database.sql**: SQL script for creating the necessary database and tables.
+2. Set up a MySQL database. Execute the database setup commands in the `app.py` file to create the necessary tables.
 
-3. **requirements.txt**: Lists the Python dependencies. Install them using `pip install -r requirements.txt`.
+3. Configure the MySQL connection details in `app.py`:
+
+    ```python
+    app.config['MYSQL_HOST'] = 'localhost'
+    app.config['MYSQL_USER'] = 'root'
+    app.config['MYSQL_PASSWORD'] = 'your_password'
+    app.config['MYSQL_DB'] = 'categoriesDB'
+    ```
+
+4. Run the Flask application:
+
+    ```bash
+    python app.py
+    ```
+
 
 ### Frontend (HTML, CSS, and JavaScript)
 
