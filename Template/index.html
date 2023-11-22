@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Category and Product Management</title>
+</head>
+<body>
+    <header>
+        <h1>Category and Product Management</h1>
+    </header>
+
+    <section id="addCategorySection">
+        <h2>Add a Category</h2>
+        <form id="addCategoryForm">
+            <label for="categoryName">Category Name:</label>
+            <input type="text" id="categoryName" name="categoryName" required>
+            <button type="button" onclick="addCategory()">Add Category</button>
+        </form>
+    </section>
+
+    <section id="addProductSection">
+        <h2>Add a Product</h2>
+        <form id="addProductForm">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required>
+            <label for="categorySelect">Select Category:</label>
+            <select id="categorySelect" name="categorySelect" required>
+            </select>
+            <button type="button" onclick="addProduct()">Add Product</button>
+        </form>
+    </section>
+
+    <section id="categoryListSection">
+        <h2>All Categories</h2>
+        <div id="categoryList">
+            <!-- Populate this section with categories and child categories fetched from the backend -->
+        </div>
+    </section>
+
+    <section id="productListSection">
+        <h2>All Products</h2>
+        <div id="productList">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Category and Product Management</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
